@@ -1,0 +1,9 @@
+<?php
+//Filtering valid URLs
+$input_url = "http://UrlToCheck.something/moreAbout/it";
+if((!filter_var($input_url, FILTER_VALIDATE_URL) === false)){
+	echo "valid";
+}else{
+	echo "Invalid";
+}
+?>
